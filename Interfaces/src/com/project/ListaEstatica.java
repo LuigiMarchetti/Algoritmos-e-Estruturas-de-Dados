@@ -34,8 +34,6 @@ public class ListaEstatica implements Lista {
         tamanho++;
     }
 
-
-    @Override
     public void redimensionar() {
         int[] vetorAntigo = this.info;
         this.info = new int[vetorAntigo.length * 2];
@@ -113,6 +111,11 @@ public class ListaEstatica implements Lista {
     @Override
     public int getTamanho() {
         return this.tamanho;
+    }
+
+    @Override
+    public int pegar(int pos) {
+        return info[pos];
     }
 
 }
