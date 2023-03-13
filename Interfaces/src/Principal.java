@@ -1,3 +1,5 @@
+import com.project.ListaEstatica;
+
 public class Principal {
 
     public static void main(String[] args) {
